@@ -40,13 +40,13 @@
         {
             "name": "官服",
             "path": [
-                "./assets/resource"
+                "./resource"
             ]
         },
         {
             "name": "B 服",
             "path": [
-                "./assets/resource"
+                "./resource"
                 // "./resource_bilibili"
             ]
         }
