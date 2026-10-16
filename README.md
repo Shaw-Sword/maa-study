@@ -30,6 +30,7 @@
 2. 使用了import的方式导入了其他pi文件，目录在tasks里面，结构参考 deps\tools\interface_import.schema.json
 3. 修改了.github/workflows/install.json，注释了on部分的触发，提交不会进行构建，保留了手动构建
 4. ~~修改了maatools.config.mts,把interface.json改到根目录了~~
+5. 修改了.github/workflows/check.json，注释了on部分的触发，提交不会进行校验，保留了手动构建
 
 ### 开发备注
 
