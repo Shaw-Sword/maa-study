@@ -7,6 +7,9 @@ docs/.vuepress/.temp
 # 忽略临时文件 用于格式化json方便查看的
 临时/
 
+# 忽略 MFAAvalonia 相关
+MFAAvalonia/
+
 # Compiled Object files
 build
 build-*

@@ -69,9 +69,12 @@ python tools/validate_schema.py --schema-dir deps/tools --resource-dirs assets/r
 - 构建
 
 ```shell
-
-python tools/install.py v0.0.1 win x86_64  # 执行构建
+python tools/install.py v0.0.1 win x86_64  # 执行构建  产物在install目录
 ```
+
+install产物需要拷贝到 MFAAvalonia 进行资源加载运行
+或者下载好后把MFAAvalonia全拷贝当当前的install目录然后再构建
+下载 <https://github.com/MaaXYZ/MFAAvalonia/releases>
 
 #### 初始化的时候使用(已初始化，无需执行，只记录操作)
 
