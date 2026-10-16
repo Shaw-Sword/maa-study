@@ -7,14 +7,27 @@
         "custom_recognition": "find_smallest_number",
         "custom_recognition_param": {
             "candidate_rois": [
-                [100, 100, 200, 100],
-                [300, 100, 200, 100]
+                [
+                    59,
+                    31,
+                    39,
+                    27
+                ],
+                [
+                    181,
+                    75,
+                    56,
+                    46
+                ]
             ]
         },
         "action": "Custom",
         "custom_action": "click_target",
         "custom_action_param": {
-            "target": [10, 20]
+            "target": [
+                10,
+                20
+            ]
         }
     },
     "RecognizeNumber": {
