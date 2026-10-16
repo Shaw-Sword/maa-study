@@ -22,6 +22,61 @@
 
 向本模板仓库提交改动前，请阅读 [PR 规范](./docs/zh_cn/develop/pull_request_guidelines.md)。
 
+## 项目开发
+
+### 结构介绍
+
+1. ~~.vscode里面有配置文件,settings里面修改了interface.json的可能位置(移动到根目录)，新增了tasks目录的结构验证~~
+2. 使用了import的方式导入了其他pi文件，目录在tasks里面，结构参考 deps\tools\interface_import.schema.json
+3. 修改了.github/workflows/install.json，注释了on部分的触发，提交不会进行构建，保留了手动构建
+4. ~~修改了maatools.config.mts,把interface.json改到根目录了~~
+
+### 开发备注
+
+#### 可能会用到的命令
+
+1. 使用uv管理python部分
+
+- 拉取当前项目后
+
+```shell
+uv sync
+python tools/validate_schema.py --schema-dir deps/tools --resource-dirs assets/resource --exclude-dirs assets/resource/announcement --interface-files assets/interface.json   --task-dirs tasks
+```
+
+1. 本地构建
+
+- 参考 tools\install.py
+- 补齐环境
+
+```shell
+uv add json-with-comments   # 参考 tools\requirements.txt
+git submodule update --init --recursive # 补子仓库 参考 .gitmodules
+# 可选   
+git submodule update --remote --recursive # 如果子模块有更新
+
+
+```
+
+- 下载 MaaFramework 到 "deps",地址 <https://github.com/MaaXYZ/MaaFramework/releases> 除了tools全拷贝到deps里面，保证目录结构是deps/bin,然后maa的tools里面多的也可以拷贝到该项目
+
+- 构建
+
+```shell
+
+python tools/install.py v0.0.1 win x86_64  # 执行构建
+```
+
+#### 初始化的时候使用(已初始化，无需执行，只记录操作)
+
+```shell
+uv python pin 3.13
+uv init  
+uv venv
+.\.venv\Scripts\activate
+uv add jsonschema==4.26.0 referencing==0.37.0
+```
+
 ## 生态共建
 
 MAA 正计划建设为一类项目，而非舟的单一软件。

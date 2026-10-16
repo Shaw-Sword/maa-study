@@ -1,0 +1,28 @@
+{
+    "task": [
+        {
+            "name": "导入-日常",
+            "entry": "MyTask1",
+            "label": "导入日常任务(测试)",
+            "description": "这是测试说明",
+            "option": [
+                "测试选项1"
+            ]
+        }
+    ],
+    "option": {
+        "测试选项1": {
+            "type": "select",
+            "label": "测试选项1",
+            "cases": [
+                {
+                    "name": "选项case1"
+                },
+                {
+                    "name": "选项case2",
+                    "label": "选项label2"
+                }
+            ]
+        }
+    }
+}
