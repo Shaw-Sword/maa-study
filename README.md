@@ -41,7 +41,6 @@
 
 ```shell
 uv sync
-python tools/validate_schema.py --schema-dir deps/tools --resource-dirs assets/resource --exclude-dirs assets/resource/announcement --interface-files assets/interface.json   --task-dirs tasks
 ```
 
 1. 本地构建
@@ -59,6 +58,12 @@ git submodule update --remote --recursive # 如果子模块有更新
 ```
 
 - 下载 MaaFramework 到 "deps",地址 <https://github.com/MaaXYZ/MaaFramework/releases> 除了tools全拷贝到deps里面，保证目录结构是deps/bin,然后maa的tools里面多的也可以拷贝到该项目
+
+- 校验
+
+```shell
+python tools/validate_schema.py --schema-dir deps/tools --resource-dirs assets/resource --exclude-dirs assets/resource/announcement --interface-files assets/interface.json   --task-dirs tasks
+```
 
 - 构建
 
