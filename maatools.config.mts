@@ -3,7 +3,8 @@ import type { FullConfig } from '@nekosu/maa-tools'
 const config: FullConfig = {
   cwd: import.meta.dirname,
   maaVersion: 'latest',
-  interfacePath: 'assets/interface.json',
+  // interfacePath: 'assets/interface.json',
+  interfacePath: 'interface.json',
   check: {
     override: {
       // 忽略 mpe-config 带来的报错

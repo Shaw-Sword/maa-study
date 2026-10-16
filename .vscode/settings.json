@@ -12,7 +12,8 @@
         {
             "fileMatch": [
                 "/assets/interface.json",
-                "/install/interface.json"
+                "/install/interface.json",
+                "interface.json"
             ],
             "url": "/deps/tools/interface.schema.json"
         },
@@ -24,7 +25,8 @@
         }
     ],
     "files.associations": {
-        "**/assets/**/*.json": "jsonc"
+        "**/assets/**/*.json": "jsonc",
+        "interface.json": "jsonc",
     },
     "[json][jsonc]": {
         "editor.formatOnSave": true,
