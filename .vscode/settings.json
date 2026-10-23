@@ -2,10 +2,14 @@
     "json.schemas": [
         {
             "fileMatch": [
-                "/assets/resource/**/*.json",
-                "/install/resource/**/*.json",
-                "/assets/resource/**/*.jsonc",
-                "/install/resource/**/*.jsonc"
+                // "/assets/resource/**/*.json",
+                // "/install/resource/**/*.json",
+                // "/assets/resource/**/*.jsonc",
+                // "/install/resource/**/*.jsonc"
+                "/assets/resource/pipeline/*.json",
+                "/install/resource/pipeline/*.json",
+                "/assets/resource/pipeline/*.jsonc",
+                "/install/resource/pipeline/*.jsonc"
             ],
             "url": "/deps/tools/pipeline.schema.json"
         },
@@ -25,7 +29,11 @@
         },
         {
             "fileMatch": [
-                "/tasks/*.json"
+                "/tasks/*.json",
+                "/assets/resource/tasks/*.json",
+                "/install/resource/tasks/*.json",
+                "/assets/resource/preset/*.json",
+                "/install/resource/preset/*.json"
             ],
             "url": "/deps/tools/interface_import.schema.json"
         },
