@@ -108,7 +108,8 @@
     },
     "import": [
         // "./tasks/日常任务测试.json"
-        "./resource/preset/日常集合.json",
+        "./resource/tasks/preset/日常集合.json",
+        "./resource/tasks/preset/测试预设集合.json",
         "./resource/tasks/日常任务测试.json"
     ]
 }

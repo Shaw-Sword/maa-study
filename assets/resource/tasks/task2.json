@@ -1,0 +1,28 @@
+{
+    "task": [
+        {
+            "name": "测试-task2",
+            "entry": "MyTask2",
+            "label": "任务2(测试)",
+            "description": "这是测试说明",
+            "option": [
+                "测试选项1"
+            ]
+        }
+    ],
+    "option": {
+        "测试选项1": {
+            "type": "select",
+            "label": "测试选项1",
+            "cases": [
+                {
+                    "name": "选项case1"
+                },
+                {
+                    "name": "选项case2",
+                    "label": "选项label2"
+                }
+            ]
+        }
+    }
+}
